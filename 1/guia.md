@@ -96,6 +96,15 @@ se refiera a otros paradigmas? -->
 4. Defina clase y objeto. Explicite de qué manera se puede fijar el nivel de
    acceso a los miembros de una clase.
 
+   Una _class_ es un TDA que puede ser considerado como una generalización de
+   los _struct_ en C. Un objeto es una variable o instancia concreta de una
+   determinada clase.
+
+   El nivel de acceso a los miembros de una clase puede fijarse con los
+   modificadores `public` (acceso libre), `private` (sólo por funciones y
+   operadores propios de la clase) y `protected` (privados para funciones
+   externas, pero públicos para clases que la hereden).
+
 5. ¿Cómo se definen las funciones o métodos en una clase?
 
 6. Defina Lenguaje Unificado de Modelado. ¿Qué tipos de diagramas UML conoce?
