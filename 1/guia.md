@@ -82,6 +82,17 @@ se refiera a otros paradigmas? -->
 3. ¿En qué se basa la programación orientada a objetos (POO)? ¿Qué ventajas
    presenta respecto de otros lenguajes? ¿Qué características salientes posee?
 
+   Se basa en el empleo de objetos (módulos, componentes) como elementos
+   fundamentales, como una abstracción de algún hecho o ente del mundo real.
+   Los objetos están compuestos por **atributos y métodos** (Cátedra).
+
+   La POO permite separar los diferentes componentes de un programa,
+   simplificando así su creación, depuración y posteriores mejoras. Disminuye
+   los errores y promociona la reutilización del código.
+   [(Profile)](https://profile.es/blog/que-son-los-paradigmas-de-programacion/)
+
+   ¿Características salientes?
+
 4. Defina clase y objeto. Explicite de qué manera se puede fijar el nivel de
    acceso a los miembros de una clase.
 
