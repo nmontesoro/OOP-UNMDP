@@ -48,7 +48,7 @@
    typedef struct list {
       list_node *head;
       int count;
-   }
+   } list;
    ```
 
    Para hacer uso de una estructura así, como mínimo necesitaría una función que
