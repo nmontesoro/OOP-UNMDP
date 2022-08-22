@@ -3,6 +3,29 @@
 1. ¿Qué entiende por paradigma? ¿Qué paradigma de programación utilizó hasta
    ahora? ¿Cuáles son sus características?
 
+   **Definiciones**
+
+   Un paradigma es un estilo de programación. Un conjunto de métodos
+   sistemáticos para resolver problemas computacionales.
+   [(Profile)](https://profile.es/blog/que-son-los-paradigmas-de-programacion/)
+
+   Los paradigmas de programación son las formas de clasificar los lenguajes de
+   programación en función de sus características.
+   [(Wikipedia)](https://es.wikipedia.org/wiki/Paradigma_de_programaci%C3%B3n)
+
+   Son distintas maneras y estilos para plantear una solución a un problema
+   computacional. (Cátedra)
+
+   **Utilizados hasta ahora**
+
+   Hasta ahora hemos utilizado el paradigma estructurado. Esta técnica consiste
+   en basarse en un número muy bajo de expresiones repetidas, englobarlas todas
+   en un procedimiento o función y llamarlo cada vez que tenga que ejecutarse.
+   [(Wikipedia)](https://es.wikipedia.org/wiki/Programaci%C3%B3n_por_procedimientos)
+   Engloba los conceptos de tipos de datos, operadores y expresiones,
+   algoritmos, estructuras de control, funciones, constantes y variables, y
+   programación modular (Cátedra).
+
 2. Describa el tipo de dato abstracto (TDA). ¿Puede el lenguaje C trabajar con
    TDAs? Dé un ejemplo del tipo de dato abstracto en C si el lenguaje lo
    soporta, o de lo contrario indique cómo lo haría.
