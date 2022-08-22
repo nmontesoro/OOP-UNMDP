@@ -116,6 +116,29 @@ se refiera a otros paradigmas? -->
    clases adicionales que hereden métodos y atributos de la clase anterior.
    Genere para esa situación un diagrama UML.
 
+   UML (_Unified Modeling Language_) es una serie de normas y estándares
+   gráficos respecto a cómo se deben representar los esquemas y diagramas
+   relativos al software (Cátedra)
+
+   Los tipos de diagramas UML son:
+
+   - De clases, como una representación de conceptos que intervienen en un
+     problema, o clases de software.
+
+   - De secuencia, para representar objetos y el intercambio de mensajes entre
+     ellos.
+
+   - De estados, para indicar cómo evoluciona un sistema a medida que se
+     producen determinados eventos.
+
+   - De colaboración, para representar objetos o clases y la forma en que
+     transmiten mensajes y colaboran entre sí.
+
+   - De casos de uso, para representar a los actores y casos de uso que
+     intervienen en un desarrollo de software.
+
+   - Otros (actividad, paquetes, arquitectura de software, etc).
+
 7. En C, para el manejo de archivos, utilizó `FILE *` (el cual es un TDA).
    Investigue al respecto.
 
