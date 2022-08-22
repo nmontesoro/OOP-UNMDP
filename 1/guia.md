@@ -107,6 +107,10 @@ se refiera a otros paradigmas? -->
 
 5. ¿Cómo se definen las funciones o métodos en una clase?
 
+   Los métodos de una clase se definen anteponiendo a su nombre el nombre de
+   la clase y el operador `::`:
+   `tipo_dato_retorno <nombre_clase>::<nombre_metodo>(parametros) {...}`
+
 6. Defina Lenguaje Unificado de Modelado. ¿Qué tipos de diagramas UML conoce?
    Cree una clase, defina la visibilidad de los atributos y métodos, genere tres
    clases adicionales que hereden métodos y atributos de la clase anterior.
