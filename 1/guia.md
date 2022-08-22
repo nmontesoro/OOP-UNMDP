@@ -30,6 +30,52 @@
    TDAs? Dé un ejemplo del tipo de dato abstracto en C si el lenguaje lo
    soporta, o de lo contrario indique cómo lo haría.
 
+   Un TDA es un _encapsulamiento_ que contiene la definición de un nuevo tipo
+   de datos y todas las operaciones que se pueden realizar con él. Se facilitan
+   las modificaciones e incorporaciones de nuevas características o funciones
+   (Cátedra).
+
+   Si bien C no está preparado para trabajar con TDAs, pueden implementarse con
+   una complejidad tal vez mayor que en otros lenguajes. Por ejemplo, podría
+   declarar un TDA para trabajar con listas dinámicas de la siguiente forma:
+
+   ```
+   typedef struct list_node {
+      void *elem;
+      struct list_node *next;
+   } list_node;
+
+   typedef struct list {
+      list_node *head;
+      int count;
+   }
+   ```
+
+   Para hacer uso de una estructura así, como mínimo necesitaría una función que
+   le asigne memoria, y otra que la libere:
+
+   ```
+   list *list_new(int size) {
+      list *l = NULL;
+
+      if (size > 0 && l = malloc(sizeof(list))) {
+         ...
+      }
+
+      return l;
+   }
+
+   void list_destroy(list **l) {
+      if (l && *l) {
+         ...
+      }
+   }
+   ```
+
+   Además de todas las funciones necesarias para la creación de nodos nuevos, y
+   la creación del vínculo entre nodos.
+   [Ver otros ejemplos en mi Github](https://github.com/nmontesoro/AyED).
+
 <!-- ¿Puede ser que falte una pregunta sobre C++? ¿O que en vez de lenguajes
 se refiera a otros paradigmas? -->
 
