@@ -182,6 +182,8 @@ se refiera a otros paradigmas? -->
 4. Realice un programa que permita saber las veces que una función fue invocada
    desde el programa principal.
 
+   Ver `1/practica/4/4.cpp`.
+
 5. Implementar un TDA llamado `vehiculo`, organizando la definición en un
    archivo de cabecera y su implementación en un `.c`. Utilice una estructura
    que contenga campos para representar los atributos del vehículo: marca,
