@@ -193,6 +193,8 @@ se refiera a otros paradigmas? -->
    Además, son necesarias dos funciones encargadas de reservar y liberar memoria
    de forma dinámica: `crearVehiculo` y `destruirVehiculo`.
 
+   Ver `1/practica/5/`.
+
 6. Implementar el mismo TDA del ejercicio 5, pero ahora usando una _class_ y una
    _struct_ de C++. ¿Qué diferencias y qué similitudes nota entre una _class_ y
    una _struct_ de C++? ¿Y entre una _struct_ de C y una de C++?
