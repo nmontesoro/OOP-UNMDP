@@ -176,6 +176,9 @@ se refiera a otros paradigmas? -->
    r = (float) a/b;
    ```
 
+   Ver `1/practica/3/3.cpp`. El código provisto también es válido en C++, pero
+   también hay una forma más ``nativa''.
+
 4. Realice un programa que permita saber las veces que una función fue invocada
    desde el programa principal.
 
