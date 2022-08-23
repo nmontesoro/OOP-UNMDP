@@ -153,6 +153,18 @@ se refiera a otros paradigmas? -->
    entre un puntero y una referencia? ¿Le resultó más fácil la implementación
    usando las referencias?
 
+   Ver `1/practica/2/2.cpp`.
+
+   Una referencia es como un **puntero constante**. El valor de dicha referencia
+   no puede cambiar luego de ser inicializada, **siempre apunta al dato
+   original.** En algunos casos, el compilador puede optimizar una referencia
+   de forma tal que no haya un objeto representándola en tiempo de ejecución
+   (_The C++ Programming Language_, Bjarne Stroustrup).
+
+   Me parece que, al menos en este ejemplo, las referencias contribuyen a la
+   claridad y legibilidad del código, ya que evitan tener que desreferenciar
+   los punteros como se haría en C.
+
 3. El siguiente fragmento de código muestra cómo almacenar el resultado de la
    división entre dos números enteros. Escriba dicha conversión en lenguaje C++.
 
