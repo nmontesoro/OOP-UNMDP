@@ -7,7 +7,10 @@ int main(int argc, char **argv)
     if (v)
     {
         v->set_marca(v, "Peugeot");
+        v->set_kilometraje(v, 148000);
+
         v->acelerar(v);
+        v->get_estado(v);
     }
 
     destruirVehiculo(&v);
