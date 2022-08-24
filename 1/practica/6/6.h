@@ -19,6 +19,8 @@ private:
     int cc;
 
 public:
+    static float valor_patente;
+
     /* Constructor */
     Vehiculo();
     Vehiculo(string m, int p, int k, int c);

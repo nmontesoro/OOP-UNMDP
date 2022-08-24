@@ -18,6 +18,8 @@ Vehiculo::Vehiculo(string m, int p, int k, int c)
     cc = c;
 }
 
+float Vehiculo::valor_patente = 0;
+
 string Vehiculo::marca() { return ma; }
 void Vehiculo::marca(string m) { ma = m; }
 
