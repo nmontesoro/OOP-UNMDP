@@ -229,7 +229,7 @@ se refiera a otros paradigmas? -->
    cuestión **sin** crear ninguna instancia de `vehiculo`? Experimente y
    comente.
    
-   Según [TutorialsPoint](https://www.tutorialspoint.com/cplusplus/cpp_static_members.htm]:
+   Según [TutorialsPoint](https://www.tutorialspoint.com/cplusplus/cpp_static_members.htm):
    
    > Se pueden definir miembros estáticos de una clase usando la palabra 
    > `static`. Los miembros estáticos son compartidos entre todas las instancias
