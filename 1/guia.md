@@ -201,6 +201,25 @@ se refiera a otros paradigmas? -->
    Experimente sobre los modificadores de acceso sobre métodos y atributos: ¿Le
    resultó más fácil implementar el TDA en C++? ¿Por qué?
 
+   Ver `1/practica/6/`. Es mucho más fácil implementar un TDA en C++, ya que
+   además de lograr una mayor legibilidad del código, el programador no tiene
+   que preocuparse por el manejo dinámico de memoria (en el caso de los
+   constructores y destructores, salvo que específicamente necesite manejar
+   punteros dentro del TDA). Tampoco es necesario verificar si un puntero que
+   refiere al TDA es `NULL`, es decir:
+
+   ```
+   /* Setear el campo de una estructura de TDA en C */
+   void vehiculo_set_kilometraje(vehiculo *v, int km)
+   {
+	/* Primero tengo que comprobar que el puntero no sea NULL */
+	if (v) { v->km = km; }
+   }
+
+   /* El mismo proceso, en C++ */
+   void Vehiculo::kilometraje(int kilometraje) { km = kilometraje; }
+   ```
+
 7. Agregue un atributo público estático llamado `valor_patente` de tipo `float`
    a la clase `vehiculo` del ejercicio 6. Luego, desde el programa principal,
    cree dos representantes o _instancias_ de tipo `vehiculo` y en una de las
