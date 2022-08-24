@@ -254,3 +254,39 @@ se refiera a otros paradigmas? -->
    Entonces, escriba un conjunto de funciones en C (los prototipos en un `.h` y
    la implementación en un `.c`) para sumar, restar, multiplicar y dividir
    enteros. Luego, escriba un programa en C++ que use dichas funciones.
+
+   En _The C++ Programming Language_, sección 15.2.5, se especifican los pasos
+   a seguir para utilizar código C en un programa escrito en C++. Si la librería
+   ya está armada, lo más fácil es utilizar **compilación condicional** de la
+   siguiente forma:
+   
+   ```
+   #ifdef __cplusplus
+   extern "C" {
+   #endif
+	   char *strcpy(char *, const char *);
+	   int strcmp(const char *, const char *);
+	   int strlen(const char *);
+	   // ...
+   #ifdef __cplusplus
+   }
+   #endif
+   ```
+   
+   Esto termina creando un header compatible tanto para C como para C++, ya que
+   `__cplusplus` sólo estará definida cuando se compile para C++ (con `g++`, por
+   ejemplo).
+   
+   _Nota: la C en `extern "C"` refiere a una convención de vínculo (_linkage 
+   convention_), y no al lenguaje C. `extern "C"` también puede utilizarse para
+   linkear código escrito en Fortran o en assembler._
+   
+   Un ejemplo de esto se puede ver en `1/practica/8/` donde compilando con
+   
+   ```
+   gcc 8.c test_c.c -o test_c.out && g++ 8.c test_cpp.cpp -o test_cpp.out
+   ```
+   
+   Se consiguen dos ejecutables. Ambos hacen exactamente lo mismo (de hecho
+   el `main` de ambos es exactamente igual), pero uno está escrito en C y 
+   el otro en C++.
