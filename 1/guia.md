@@ -228,7 +228,26 @@ se refiera a otros paradigmas? -->
    valor se muestra en consola? ¿Por qué? ¿Será posible acceder al atributo en
    cuestión **sin** crear ninguna instancia de `vehiculo`? Experimente y
    comente.
-
+   
+   Según [TutorialsPoint](https://www.tutorialspoint.com/cplusplus/cpp_static_members.htm]:
+   
+   > Se pueden definir miembros estáticos de una clase usando la palabra 
+   > `static`. Los miembros estáticos son compartidos entre todas las instancias
+   > de una clase.
+   
+   Esto explica por qué, al querer modificar `valor_patente` de la instancia
+   `v2`, se termine modificando dicho valor en ambas instancias.
+   
+   Este hecho puede ser confirmado en el debugger, imprimiendo la dirección de
+   memoria del atributo `valor_patente` de cada instancia. En GDB:
+   
+   ```
+   (gdb) print &v1.valor_patente
+   $1 = (float *) 0x55555555805c <Vehiculo::valor_patente>
+   (gdb) print &v2.valor_patente
+   $2 = (float *) 0x55555555805c <Vehiculo::valor_patente>
+   ```
+   
 8. Antes de que el genio de Stroustrup inventara el lenguaje C++ la gente
    escribió mucho código en C. ¿Conoce la forma de usar código escrito en C
    desde C++? En la clase teórica se mencionó la palabra reservada `extern`.
