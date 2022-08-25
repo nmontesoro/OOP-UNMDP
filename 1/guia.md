@@ -1,4 +1,5 @@
-# Preguntas orientadoras
+# Guía 1
+## Preguntas orientadoras
 
 1. ¿Qué entiende por paradigma? ¿Qué paradigma de programación utilizó hasta
    ahora? ¿Cuáles son sus características?
@@ -142,7 +143,7 @@ se refiera a otros paradigmas? -->
 7. En C, para el manejo de archivos, utilizó `FILE *` (el cual es un TDA).
    Investigue al respecto.
 
-# Ejercicios
+## Ejercicios
 
 1. Genere un proyecto de consola de C++ y comente las diferencias y similitudes
    que nota con un proyecto de consola de C.
@@ -229,7 +230,7 @@ se refiera a otros paradigmas? -->
    cuestión **sin** crear ninguna instancia de `vehiculo`? Experimente y
    comente.
    
-   Según [TutorialsPoint](https://www.tutorialspoint.com/cplusplus/cpp_static_members.htm]:
+   Según [TutorialsPoint](https://www.tutorialspoint.com/cplusplus/cpp_static_members.htm):
    
    > Se pueden definir miembros estáticos de una clase usando la palabra 
    > `static`. Los miembros estáticos son compartidos entre todas las instancias
