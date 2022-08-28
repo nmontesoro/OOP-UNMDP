@@ -4,6 +4,32 @@
 1. Mencione y defina los tipos de ámbitos de las variables que se presentaron
 en la teoría. ¿Por qué definiría como global una variable de tipo `static`?
 
+Según _The C++ Programming Language_, los ámbitos (_scopes_) son:
+
+- **Local**: una variable declarada en una función o lambda. Su ámbito se
+extiende desde su declaración hasta el fin del bloque que la contiene
+(delimitado por `{}`).
+
+- **De clase**: se conoce como miembro a la variable que es definida en una
+clase por fuera de cualquier otra función, clase, enumerador u otro 
+_namespace_. Su ámbito se extiende desde el punto de declaración hasta el fin
+del _namespace_.
+
+- **Global**: cuando una variable es definida por fuera de una función, clase,
+enumerador o _namespace_. Su ámbito se extiende desde el punto de declaración
+hasta el fin del archivo donde ésta ocurre. 
+
+- **De sentencia (_statement scope_)**: si se la define dentro de los `()` en
+un `for`, `while`, `if` o `switch`. Se extiende desde la declaración hasta el
+fin de la sentencia. Todas las variables de este ámbito son variables locales.
+
+- **De función (_function scope_)**: El ámbito de un _label_ es desde su 
+declaración hasta el fin de la función (ver sección 9.6 sobre `goto`s).
+
+Declarar una variable global como `static` implicaría que cada archivo `*.cpp`
+tenga su propia copia de la variable. Ver 
+[StackOverflow](https://stackoverflow.com/a/14349916).
+
 2. ¿Qué modificador elegiría para indicar que una variable puede cambiar su 
 valor entre accesos aún cuando no pareciera haber sido modificado? ¿En qué 
 aplicaciones se utiliza este modificador?
