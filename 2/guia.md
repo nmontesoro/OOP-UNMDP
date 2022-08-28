@@ -56,27 +56,27 @@ cuando el objeto ya no es necesario y se requiere liberar la memoria asignada a
 
 5. Llene los espacios en blanco:
 
-    - Se tiene acceso a los miembros de la clase vía el operador () en 
-    conjunción con un objeto de clase o vía el operador () en conjunción con
+    - Se tiene acceso a los miembros de la clase vía el operador (`.`) en 
+    conjunción con un objeto de clase o vía el operador (`->`) en conjunción con
     un apuntador a un objeto de clase.
 
-    - Los miembros de una clase especificados como () son sólo accesibles a las
-    funciones miembro de la clase y amigos de la clase.
+    - Los miembros de una clase especificados como (`private`) son sólo 
+    accesibles a las funciones miembro de la clase y amigos de la clase.
 
-    - Un () es una función miembro especial utilizada para inicializar los 
-    miembros datos de una clase.
+    - Un (constructor) es una función miembro especial utilizada para 
+    inicializar los miembros datos de una clase.
 
     - El acceso por omisión para los miembros de una clase es ().
 
-    - Los miembros de una clase especificados como () son accesibles en 
+    - Los miembros de una clase especificados como (`static`) son accesibles en 
     cualquier parte en que un objeto de la clase esté en alcance.
 
-    - El operador () asigna dinámicamente memoria para un objeto de un tipo
-    específico y regresa un () a dicho tipo.
+    - El operador (`new`) asigna dinámicamente memoria para un objeto de un tipo
+    específico y regresa un (puntero) a dicho tipo.
 
-    - Las operaciones de entrada son soportadas por la clase ().
+    - Las operaciones de entrada son soportadas por la clase (`istream`).
 
-    - Las operaciones de salida son soportadas por la clase ().
+    - Las operaciones de salida son soportadas por la clase (`ostream`).
 
 6. Encuentre el o los errores y corrija:
 
