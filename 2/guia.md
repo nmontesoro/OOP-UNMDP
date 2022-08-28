@@ -49,6 +49,11 @@ de un puntero puede cambiar de acuerdo a las necesidades del programador.
 4. Indique cuál es la función de los constructores y para qué existen los
 destructores.
 
+Los constructores se utilizan para definir cómo deberán inicializarse los 
+objetos de una clase determinada. Los destructores se encargan de la "limpieza",
+cuando el objeto ya no es necesario y se requiere liberar la memoria asignada a
+éste.
+
 5. Llene los espacios en blanco:
 
     - Se tiene acceso a los miembros de la clase vía el operador () en 
