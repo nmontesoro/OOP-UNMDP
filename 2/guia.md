@@ -118,6 +118,17 @@ cuando el objeto ya no es necesario y se requiere liberar la memoria asignada a
 7. ¿Se pueden utilizar los nombres definidos en un espacio de nombres sin
 utilizar la palabra reservada `using`?
 
+Sí, utilizando el operador `::`. Por ejemplo:
+
+```
+#include <iostream>
+
+int main(int argc, char **argv) {
+    std::cout << "Hello world!" << std::endl;
+    return 0;
+}
+```
+
 ## Ejercicios
 
 1. ¿Qué inconveniente presenta el programa que se muestra a continuación?
