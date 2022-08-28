@@ -34,6 +34,11 @@ tenga su propia copia de la variable. Ver
 valor entre accesos aún cuando no pareciera haber sido modificado? ¿En qué 
 aplicaciones se utiliza este modificador?
 
+El modificador `volatile`, que indica al compilador que no debe optimizar 
+lecturas y escrituras de una variable que podrían parecer redundantes. Se 
+utiliza en la escritura de código de bajo nivel, que requiere acceso directo al
+hardware (por ejemplo, leer los datos de una placa de adquisición).
+
 3. ¿Por qué puede ser que el operador `new` retorna un puntero y no una 
 referencia? _Ayuda: piense en la diferencia entre punteros y referencias para
 encontrar la respuesta._
