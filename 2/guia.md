@@ -43,6 +43,9 @@ hardware (por ejemplo, leer los datos de una placa de adquisición).
 referencia? _Ayuda: piense en la diferencia entre punteros y referencias para
 encontrar la respuesta._
 
+Porque las referencias sólo pueden ser asignadas una vez, mientras que el valor
+de un puntero puede cambiar de acuerdo a las necesidades del programador.
+
 4. Indique cuál es la función de los constructores y para qué existen los
 destructores.
 
