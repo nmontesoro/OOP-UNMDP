@@ -81,13 +81,32 @@ cuando el objeto ya no es necesario y se requiere liberar la memoria asignada a
 6. Encuentre el o los errores y corrija:
 
     ```
-    void ~Time(int);
+    void ~Time(int); // <-- Declarado fuera de la clase, no puede tomar
+                     // parámetros ni debe tener un tipo de devolución
+                     // (aunque fuera void)
 
     \* Suponga la siguiente definición parcial de la clase Time *\
     class Time
     {
+    public: // <-- Faltan constructor y destructor
+        // Function prototypes
+
+    private:
+        int hour = 0;
+        int minute = 0;
+        int second = 0;
+    };
+    ```
+
+    El código correcto sería:
+
+    ```
+    class Time
+    {
     public:
         // Function prototypes
+        Time(int hora, int minuto, int segundo);
+        ~Time();
 
     private:
         int hour = 0;
