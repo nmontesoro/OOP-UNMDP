@@ -33,3 +33,7 @@
 
 # Visual Studio Code
 .vscode
+
+# Clang
+*.ilk
+*.pdb
