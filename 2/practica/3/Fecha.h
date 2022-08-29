@@ -3,20 +3,18 @@
 
 #include <regex>
 
-using namespace std;
-
 namespace oop
 {
     class Fecha
     {
     private:
-        int day;
-        int month;
-        int year;
-        static const regex fecha_regex;
-        static const char *months[];
+        int day_;
+        int month_;
+        int year_;
+        static const std::regex fecha_regex_;
+        static const char *months_[];
 
-        static bool matchFechaRegex(string input, int &day, int &month,
+        static bool matchFechaRegex(std::string input, int &day, int &month,
                                     int &year);
 
     public:
@@ -41,13 +39,13 @@ namespace oop
 
         /**
          * @brief Establece el mes del objeto (previa validación)
-         * @param month
+         * @param month Mes
          */
         void setMonth(int month);
 
         /**
          * @brief Establece el año del objeto (previa validación)
-         * @param year
+         * @param year Año
          */
         void setYear(int year);
 
@@ -87,6 +85,6 @@ namespace oop
          */
         static bool validarFecha(int day, int month, int year);
     };
-};
+}
 
 #endif
