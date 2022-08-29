@@ -144,6 +144,19 @@ Discuta las posibles soluciones.
         return 0;
     }
     ```
+	
+	- No incluye `<iostream>`
+	- Falta `using namespace std;`
+	- Toma dos veces el input del usuario (`cin >> cadena` y luego 
+	`getline(cin, cadena)`. Como resultado, `cin` vuelca el input hasta el primer
+	espacio, y luego `getline` consume el resto (pisando lo que escribió `cin`).
+	Si el usuario sólo escribe una palabra, verá en pantalla el mensaje "La
+	cadena ingresada es: ". Si escribe una oración, por ejemplo "this is a
+	test", verá el mensaje "La cadena ingresada es:  is a test".
+	
+	Una posible solución sería eliminar la línea `cin >> cadena`, y de esta forma
+	`getline` volcará todo el contenido del buffer de entrada, hasta el primer 
+	`\n`.
 
 2. ¿Qué está mal en este programa? Mencione tres formas de corregirlo.
 
