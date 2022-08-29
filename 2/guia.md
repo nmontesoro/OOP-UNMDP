@@ -169,6 +169,11 @@ Discuta las posibles soluciones.
         return 0;
     }
     ```
+	
+	No está especificado a qué _namespace_ pertenecen `cout` ni `endl`. Para
+	solucionarlo podría escribir `using namespace std;`, anteponer `std::`
+	tanto a `cout` como a `endl`, o escribir `using std::cout; using std::endl`
+	
 
 3. Crear la clase `Fecha` con todos los datos miembro y atributos que se 
 muestran en el diagrama siguiente, y luego crear un programa cliente que
