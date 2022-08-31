@@ -166,5 +166,6 @@ char *Fecha::mesLetras()
 
 ostream &oop::operator<<(ostream &co, Fecha date)
 {
-    return co << date.day_ << "/" << date.month_ << "/" << date.year_ << endl;
+    return co << date.day_ << " de " << date.mesLetras() << " de "
+              << date.year_;
 }
