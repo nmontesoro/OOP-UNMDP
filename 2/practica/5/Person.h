@@ -10,7 +10,8 @@ namespace oop
     class Person
     {
     protected:
-        std::string name_;
+        std::string first_name_;
+        std::string last_name_;
         Fecha dob_;
         std::string address_;
         std::string dni_;
@@ -25,33 +26,41 @@ namespace oop
 
         /**
          * @brief Creates a new instance of Person
-         * @param name Name
+         * @param first_name First name
+         * @param last_name Last name
          * @param dob Date of birth
          * @param address Address
          * @param dni National ID no.
          */
-        Person(std::string &name, Fecha &dob, std::string &address,
-               std::string &dni);
+        Person(std::string &first_name, std::string &last_name, Fecha &dob,
+               std::string &address, std::string &dni);
 
         /**
          * @brief Creates a new instance of Person
-         * @param name Name
+         * @param first_name First name
+         * @param last_name Last name
          * @param day Day of birth
          * @param month Month of birth
          * @param year Year of birth
          * @param address Address
          * @param dni National ID no.
          */
-        Person(std::string &name, int day, int month, int year,
-               std::string &address, std::string &dni);
+        Person(std::string &first_name, std::string &last_name, int day,
+               int month, int year, std::string &address, std::string &dni);
 
         /* ----- Getters ----- */
 
         /**
-         * @brief Returns the name of the person
-         * @return The name of the person
+         * @brief Returns the first name of the person
+         * @return The first name of the person
          */
-        std::string getName();
+        std::string getFirstName();
+
+        /**
+         * @brief Returns the last name of the person
+         * @return The last name of the person
+         */
+        std::string getLastName();
 
         /**
          * @brief Returns the date of birth of the person
@@ -74,10 +83,16 @@ namespace oop
         /* ----- Setters ----- */
 
         /**
-         * @brief Sets the name of the person
-         * @param name Name
+         * @brief Sets the first name of the person
+         * @param first_name First name
          */
-        void setName(std::string &name);
+        void setFirstName(std::string &first_name);
+
+        /**
+         * @brief Sets the last name of the person
+         * @param last_name Last name
+         */
+        void setLastName(std::string &last_name);
 
         /**
          * @brief Sets the person's date of birth
@@ -106,7 +121,10 @@ namespace oop
         void setDNI(std::string &dni);
 
         /* ----- Other methods ----- */
+        friend std::ostream &operator<<(std::ostream &co, Person &per);
     };
+
+    std::ostream &operator<<(std::ostream &co, Person &per);
 }
 
 #endif
