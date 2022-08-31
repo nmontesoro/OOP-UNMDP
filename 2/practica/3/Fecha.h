@@ -1,6 +1,7 @@
 #ifndef LIB_FECHA
 #define LIB_FECHA
 
+#include <iostream>
 #include <regex>
 
 namespace oop
@@ -84,7 +85,11 @@ namespace oop
          * @return True si es válida, falso en caso contrario
          */
         static bool validarFecha(int day, int month, int year);
+
+        friend std::ostream &operator<<(std::ostream &co, Fecha date);
     };
+
+    std::ostream &operator<<(std::ostream &co, Fecha date);
 }
 
 #endif

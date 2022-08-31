@@ -163,3 +163,8 @@ char *Fecha::mesLetras()
     }
     return m;
 }
+
+ostream &oop::operator<<(ostream &co, Fecha date)
+{
+    return co << date.day_ << "/" << date.month_ << "/" << date.year_ << endl;
+}
