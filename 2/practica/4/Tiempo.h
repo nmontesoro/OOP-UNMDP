@@ -87,7 +87,12 @@ namespace oop
          * @brief Muestra los datos del objeto en formato universal
          */
         void muestra_fmt_universal();
+
+        /* ----- Operadores ----- */
+        friend std::ostream &operator<<(std::ostream &co, Tiempo &t);
     };
+
+    std::ostream &operator<<(std::ostream &co, Tiempo &t);
 }
 
 #endif
