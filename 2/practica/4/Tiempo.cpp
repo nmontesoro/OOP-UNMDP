@@ -17,14 +17,27 @@ Tiempo::Tiempo()
 }
 
 void Tiempo::setHora(int hora) { hora_ = hora; }
-void Tiempo::setMinutos(int minutos) { minutos_ = minutos; }
-void Tiempo::setSegundos(int segundos) { segundos_ = segundos; }
+void Tiempo::setMinutos(int minutos)
+{
+    if (minutos < 60)
+    {
+        minutos_ = minutos;
+    }
+}
+
+void Tiempo::setSegundos(int segundos)
+{
+    if (segundos < 60)
+    {
+        segundos_ = segundos;
+    }
+}
 
 void Tiempo::setDatos(int hora, int minutos, int segundos)
 {
-    hora_ = hora;
-    minutos_ = minutos;
-    segundos_ = segundos;
+    this->setHora(hora);
+    this->setMinutos(minutos);
+    this->setSegundos(segundos);
 }
 
 int Tiempo::getHora() { return hora_; }
