@@ -98,7 +98,7 @@ void Tiempo::muestra_fmt_estandard()
 /* TODO: Cuál es la diferencia? */
 void Tiempo::muestra_fmt_universal() { muestra_fmt_estandard(); }
 
-ostream &oop::operator<<(ostream &co, Tiempo &t)
+ostream &oop::operator<<(ostream &co, Tiempo t)
 {
     return (co << setfill('0') << setw(2) << t.hora_ << ":" << setw(2)
                << t.minutos_ << ":" << setw(2) << t.segundos_);

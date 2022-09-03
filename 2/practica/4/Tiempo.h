@@ -89,10 +89,10 @@ namespace oop
         void muestra_fmt_universal();
 
         /* ----- Operadores ----- */
-        friend std::ostream &operator<<(std::ostream &co, Tiempo &t);
+        friend std::ostream &operator<<(std::ostream &co, Tiempo t);
     };
 
-    std::ostream &operator<<(std::ostream &co, Tiempo &t);
+    std::ostream &operator<<(std::ostream &co, Tiempo t);
 }
 
 #endif
