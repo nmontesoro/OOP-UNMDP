@@ -88,6 +88,13 @@ namespace oop
          */
         void muestra_fmt_universal();
 
+        /**
+         * @brief Devuelve la cantidad de segundos correspondientes al
+         * objeto
+         * @return Cantidad de segundos correspondientes al objeto
+         */
+        int toSeconds() const;
+
         /* ----- Operadores ----- */
         friend std::ostream &operator<<(std::ostream &co, Tiempo t);
         friend Tiempo operator-(const Tiempo &a, const Tiempo &b);

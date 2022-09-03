@@ -149,3 +149,8 @@ Tiempo oop::operator+(const Tiempo &a, const Tiempo &b)
 
     return result;
 }
+
+int Tiempo::toSeconds() const
+{
+    return (hora_ * 3600 + minutos_ * 60 + segundos_);
+}
