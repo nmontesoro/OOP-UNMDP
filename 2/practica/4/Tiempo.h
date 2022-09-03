@@ -90,9 +90,11 @@ namespace oop
 
         /* ----- Operadores ----- */
         friend std::ostream &operator<<(std::ostream &co, Tiempo t);
+        friend Tiempo operator-(const Tiempo &a, const Tiempo &b);
     };
 
     std::ostream &operator<<(std::ostream &co, Tiempo t);
+    Tiempo operator-(const Tiempo &a, const Tiempo &b);
 }
 
 #endif
