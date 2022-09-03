@@ -126,3 +126,26 @@ Tiempo oop::operator-(const Tiempo &a, const Tiempo &b)
 
     return result;
 }
+
+Tiempo oop::operator+(const Tiempo &a, const Tiempo &b)
+{
+    Tiempo result;
+    int temp[] = {0, 0, 0};
+
+    temp[0] = a.hora_ + b.hora_;
+    temp[1] = a.minutos_ + b.minutos_;
+    temp[2] = a.segundos_ + b.segundos_;
+
+    for (int i = 2; i > 0; i--)
+    {
+        if (temp[i] >= 60)
+        {
+            temp[i] -= 60;
+            temp[i - 1]++;
+        }
+    }
+
+    result.setDatos(temp[0], temp[1], temp[2]);
+
+    return result;
+}
