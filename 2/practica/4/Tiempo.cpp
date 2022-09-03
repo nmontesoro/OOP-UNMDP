@@ -154,3 +154,23 @@ int Tiempo::toSeconds() const
 {
     return (hora_ * 3600 + minutos_ * 60 + segundos_);
 }
+
+bool oop::operator>(const Tiempo &a, const Tiempo &b)
+{
+    return (a.toSeconds() > b.toSeconds());
+}
+
+bool oop::operator<(const Tiempo &a, const Tiempo &b) { return (b > a); }
+
+bool oop::operator>=(const Tiempo &a, const Tiempo &b)
+{
+    return (a.toSeconds() >= b.toSeconds());
+}
+
+bool oop::operator<=(const Tiempo &a, const Tiempo &b) { return (b >= a); }
+
+bool oop::operator==(const Tiempo &a, const Tiempo &b)
+{
+    return (a.hora_ == b.hora_ && a.minutos_ == b.minutos_ &&
+            a.segundos_ == b.segundos_);
+}

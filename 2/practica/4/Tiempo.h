@@ -99,11 +99,21 @@ namespace oop
         friend std::ostream &operator<<(std::ostream &co, Tiempo t);
         friend Tiempo operator-(const Tiempo &a, const Tiempo &b);
         friend Tiempo operator+(const Tiempo &a, const Tiempo &b);
+        friend bool operator>(const Tiempo &a, const Tiempo &b);
+        friend bool operator<(const Tiempo &a, const Tiempo &b);
+        friend bool operator>=(const Tiempo &a, const Tiempo &b);
+        friend bool operator<=(const Tiempo &a, const Tiempo &b);
+        friend bool operator==(const Tiempo &a, const Tiempo &b);
     };
 
     std::ostream &operator<<(std::ostream &co, Tiempo t);
     Tiempo operator-(const Tiempo &a, const Tiempo &b);
     Tiempo operator+(const Tiempo &a, const Tiempo &b);
+    bool operator>(const Tiempo &a, const Tiempo &b);
+    bool operator<(const Tiempo &a, const Tiempo &b);
+    bool operator>=(const Tiempo &a, const Tiempo &b);
+    bool operator<=(const Tiempo &a, const Tiempo &b);
+    bool operator==(const Tiempo &a, const Tiempo &b);
 }
 
 #endif
