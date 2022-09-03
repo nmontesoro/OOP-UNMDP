@@ -64,7 +64,7 @@ void Tiempo::ingresarDatos()
         }
         else
         {
-            cout << "Fecha invalida! Intente nuevamente..." << endl;
+            cout << "Tiempo invalido! Intente nuevamente..." << endl;
         }
     }
 }
