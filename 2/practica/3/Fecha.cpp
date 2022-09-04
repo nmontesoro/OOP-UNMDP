@@ -169,3 +169,7 @@ ostream &oop::operator<<(ostream &co, Fecha date)
     return co << date.day_ << " de " << date.mesLetras() << " de "
               << date.year_;
 }
+
+int Fecha::getDay() { return day_; }
+int Fecha::getMonth() { return month_; }
+int Fecha::getYear() { return year_; }

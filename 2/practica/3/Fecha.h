@@ -87,6 +87,24 @@ namespace oop
         static bool validarFecha(int day, int month, int year);
 
         friend std::ostream &operator<<(std::ostream &co, Fecha date);
+
+        /**
+         * @brief Devuelve el día
+         * @return Día
+         */
+        int getDay();
+
+        /**
+         * @brief Devuelve el mes
+         * @return Mes
+         */
+        int getMonth();
+
+        /**
+         * @brief Devuelve el año
+         * @return Año
+         */
+        int getYear();
     };
 
     std::ostream &operator<<(std::ostream &co, Fecha date);
