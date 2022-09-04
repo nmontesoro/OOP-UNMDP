@@ -95,6 +95,12 @@ namespace oop
          */
         int toSeconds() const;
 
+        /**
+         * @brief Devuelve la representación del tiempo como string
+         * @return Representación del tiempo como string
+         */
+        std::string toString();
+
         /* ----- Operadores ----- */
         friend std::ostream &operator<<(std::ostream &co, Tiempo t);
         friend Tiempo operator-(const Tiempo &a, const Tiempo &b);

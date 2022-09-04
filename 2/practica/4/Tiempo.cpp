@@ -98,10 +98,11 @@ void Tiempo::muestra_fmt_estandard()
 /* TODO: Cuál es la diferencia? */
 void Tiempo::muestra_fmt_universal() { muestra_fmt_estandard(); }
 
-ostream &oop::operator<<(ostream &co, Tiempo t)
+std::string Tiempo::toString()
 {
-    return (co << setfill('0') << setw(2) << t.hora_ << ":" << setw(2)
-               << t.minutos_ << ":" << setw(2) << t.segundos_);
+    return to_string(hora_) + ":" + (minutos_ < 10 ? "0" : "") +
+           to_string(minutos_) + ":" + (segundos_ < 10 ? "0" : "") +
+           to_string(segundos_);
 }
 
 Tiempo oop::operator-(const Tiempo &a, const Tiempo &b)
