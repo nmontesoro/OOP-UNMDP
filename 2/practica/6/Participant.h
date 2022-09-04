@@ -111,6 +111,12 @@ namespace oop
          * @param laps Cantidad de vueltas
          */
         void setSecondTrialLaps(int laps);
+
+        /**
+         * @brief Devuelve la edad del participante
+         * @return La edad del participante
+         */
+        int getAge();
     };
 
     Participant *getParticipantFromStdin();

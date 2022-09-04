@@ -104,3 +104,9 @@ int getIntegerFromStdin()
 
     return laps;
 }
+
+int oop::Participant::getAge()
+{
+    /* Hardcoding is horrible, kids. Don't do it. */
+    return (2022 - dob_.getYear());
+}
