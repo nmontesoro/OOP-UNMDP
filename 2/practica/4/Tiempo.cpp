@@ -105,6 +105,8 @@ std::string Tiempo::toString()
            to_string(segundos_);
 }
 
+ostream &oop::operator<<(ostream &co, Tiempo t) { return (co << t.toString()); }
+
 Tiempo oop::operator-(const Tiempo &a, const Tiempo &b)
 {
     Tiempo result;
