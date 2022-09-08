@@ -93,6 +93,7 @@ pensó.
 	
 	El output es:
 	
+	>```
 	> [naza@archlinux 2]$ ./test.out 
     > I saw Elvis in a UFO. 
     > Size = 22
