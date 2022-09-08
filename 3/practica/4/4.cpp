@@ -19,6 +19,8 @@ int main()
     {
         result = original;
         result.replace(pos, std::string::npos, replacement);
+        std::cout << std::endl
+                  << "El nuevo string es: \"" << result << "\"" << std::endl;
     }
     else
     {
