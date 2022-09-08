@@ -127,3 +127,9 @@ el funcionamiento de una clase denominada `CRacional`. Copie el código en su ID
 favorito y a continuación haga que compile sin advertencias y ejecute.
 
 	Ver `3/practica/5/`.
+
+6. La imagen (!!) que sigue muestra la declaración de una clase `string` básica.
+Se pide el código que implemente esa clase y un programa de prueba que demuestre
+su funcionamiento.
+
+	Ver `3/practica/6`.
