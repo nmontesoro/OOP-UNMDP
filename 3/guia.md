@@ -122,4 +122,8 @@ la cadena reemplazada? ¿Aumenta, disminuye o se mantiene el tamano de `s`? ¿Se
 le ocurre un caso en el que el reemplazo haga que el tamano de `s` pueda
 aumentar?
 
-	
+5. El siguiente listado es un programa de prueba llamado `test.cpp` para probar
+el funcionamiento de una clase denominada `CRacional`. Copie el código en su IDE
+favorito y a continuación haga que compile sin advertencias y ejecute.
+
+	Ver `3/practica/5/`.
