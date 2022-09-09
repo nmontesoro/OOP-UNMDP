@@ -37,7 +37,7 @@ public:
     CRacional operator++(int dummy);  // postfix
     CRacional operator--(void);       // prefix
     CRacional operator--(int dummy);  // postfix
-    CRacional operator-();
+    CRacional &operator-();
     operator double();
 };
 

@@ -67,7 +67,11 @@ CRacional CRacional::operator--(int dummy)
     return temp;
 }
 
-CRacional CRacional::operator-() { return CRacional(-num_, den_); }
+CRacional &CRacional::operator-()
+{
+    num_ *= -1;
+    return (*this);
+}
 
 CRacional::operator double() { return num_ / den_; }
 
