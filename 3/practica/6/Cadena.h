@@ -14,10 +14,10 @@ private:
     size_t nlong;  // Longitud de la cadena
 
 public:
-    CCadena(const char * = 0);  // Constructor
-    CCadena(const CCadena &);   // Constructor copia
-    CCadena(char, int);         // Constructor
-    ~CCadena();                 // Destructor
+    CCadena(const char * = nullptr);  // Constructor
+    CCadena(const CCadena &);         // Constructor copia
+    CCadena(char, int);               // Constructor
+    ~CCadena();                       // Destructor
 
     // Concatenar cadenas de caracteres
     friend CCadena operator+(const CCadena &, const CCadena &);
@@ -38,6 +38,14 @@ public:
     CCadena operator+=(const CCadena &);  // Suma más asignación
     char &operator[](unsigned int);       // Indexación
     size_t ObtenerLong() const { return nlong; }
-}
+};
+
+CCadena operator+(const CCadena &, const CCadena &);
+bool operator==(const CCadena &, const CCadena &);
+bool operator!=(const CCadena &, const CCadena &);
+bool operator<(const CCadena &, const CCadena &);
+bool operator>(const CCadena &, const CCadena &);
+istream &operator>>(istream &, CCadena &);
+ostream &operator<<(ostream &, const CCadena &);
 
 #endif
