@@ -14,6 +14,9 @@ public:
     CRacional(int entero);
     CRacional(int num, int den);
 
+    int GetNum(void);
+    int GetDen(void);
+
     friend std::ostream &operator<<(std::ostream &s, CRacional &r);
     friend std::istream &operator>>(std::istream &s, CRacional &r);
     friend CRacional operator+(CRacional &a, CRacional &b);

@@ -136,3 +136,6 @@ CRacional operator/(CRacional &a, double &b)
 {
     return CRacional(int(a.num_ / b), a.den_);
 }
+
+int CRacional::GetNum() { return num_; }
+int CRacional::GetDen() { return den_; }
