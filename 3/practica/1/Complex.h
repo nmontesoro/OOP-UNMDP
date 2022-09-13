@@ -1,3 +1,6 @@
+#ifndef LIB_COMPLEX
+#define LIB_COMPLEX
+
 #include <iostream>
 
 namespace oop
@@ -33,3 +36,5 @@ const oop::Complex operator-(const oop::Complex &lhs, const oop::Complex &rhs);
 const oop::Complex operator*(const oop::Complex &lhs, const oop::Complex &rhs);
 const oop::Complex operator/(const oop::Complex &lhs, const oop::Complex &rhs);
 std::ostream &operator<<(std::ostream &s, const oop::Complex &c);
+
+#endif
