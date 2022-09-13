@@ -1,3 +1,6 @@
+#ifndef LIB_RACIONAL
+#define LIB_RACIONAL
+
 #include <iostream>
 
 namespace oop
@@ -47,3 +50,5 @@ const oop::CRacional operator*(const oop::CRacional &lhs,
 const oop::CRacional operator/(const oop::CRacional &lhs,
                                const oop::CRacional &rhs);
 const oop::CRacional operator+(const double &lhs, const oop::CRacional &rhs);
+
+#endif
