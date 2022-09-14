@@ -11,6 +11,8 @@
 
 2. ¿Cuál es la relación entre los conceptos de clase, subclase y superclase?
 
+    Una subclase es una clase derivada de una superclase (o clase base).
+
 3. En el lenguaje C++, la derivación es una forma de expresar la relación `...`.
 
 4. Una clase derivada es una `...` de una clase base.
