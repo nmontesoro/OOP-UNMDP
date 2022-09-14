@@ -31,6 +31,15 @@ derivadas.
 8. ¿Puede una clase derivada hacer que la función pública de una clase base sea
 privada?
 
+    Sí, declarando dicha clase base como `private`, como sigue:
+
+    ```
+    class subclase : private superclase(...)
+    {
+        ...
+    }
+    ```
+
 ## Ejercicios
 
 1. Modele una clase denominada `polar`, que represente a los números complejos
