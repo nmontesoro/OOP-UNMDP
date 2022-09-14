@@ -23,7 +23,7 @@
     puedan acceder a él, pero que se comporte como `private` para todo el resto
     del código.
 
-6. Los datos y miembros protegidos son completamente `...` para las clases 
+6. Los datos y miembros protegidos son completamente (visibles) para las clases 
 derivadas.
 
 7. Las subclases pueden `...` el comportamiento de su superclase.
