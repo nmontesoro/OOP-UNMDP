@@ -11,7 +11,7 @@ namespace oop
         Estudiante();
         Estudiante(const std::string &name, unsigned int doc, const Fecha &fnac,
                    const std::string &carrera, const Fecha &fing, int cant);
-        ~Estudiante();
+        virtual ~Estudiante() override;
 
         void vSetCarrera(const std::string &carr);
         bool vSetIngreso(const Fecha &date);

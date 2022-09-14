@@ -15,7 +15,7 @@ namespace oop
         Empleado(const std::string &name, const unsigned int doc,
                  const Fecha &fnac, const std::string &categoria,
                  const Fecha &fing, float sueldo);
-        ~Empleado();
+        virtual ~Empleado() override;
 
         void vSetCategoria(const std::string &carr);
         bool vSetIngreso(const Fecha &date);

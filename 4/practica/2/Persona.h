@@ -13,7 +13,7 @@ namespace oop
         Persona(const std::string &name = "Pedro",
                 const unsigned int &num = 123456789,
                 const Fecha &fecha = Fecha());
-        ~Persona();
+        virtual ~Persona();
 
         void SetName(const std::string &nom);
         bool SetDocument(const unsigned int &doc);
