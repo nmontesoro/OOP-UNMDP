@@ -74,3 +74,7 @@ std::ostream &operator<<(std::ostream &s, const oop::Complex &c)
     double im = c.GetImaginary();
     return (s << c.GetReal() << (im < 0 ? "" : "+") << im << "i");
 }
+
+void oop::Complex::SetReal(const double &re) { re_ = re; }
+
+void oop::Complex::SetImaginary(const double &im) { im_ = im; }
