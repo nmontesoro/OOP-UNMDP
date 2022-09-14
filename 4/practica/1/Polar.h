@@ -7,6 +7,8 @@
  * Los nombres de los métodos son los especificados.
  */
 
+#include <iostream>
+
 /* Esto es horrible, pero no estaba pensado para ser heredada */
 #include "../../../3/practica/1/Complex.h"
 
@@ -26,5 +28,7 @@ namespace oop
         void SetFase(const double phase);
     };
 }
+
+std::ostream &operator<<(std::ostream &s, const oop::Polar &p);
 
 #endif

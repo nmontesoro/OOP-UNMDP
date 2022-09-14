@@ -26,3 +26,8 @@ void oop::Polar::SetFase(const double phase)
     SetReal(re);
     SetImaginary(im);
 }
+
+std::ostream &operator<<(std::ostream &s, const oop::Polar &p)
+{
+    return (s << p.GetModulo() << " /_ " << p.GetFase());
+}
