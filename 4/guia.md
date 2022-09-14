@@ -26,7 +26,7 @@
 6. Los datos y miembros protegidos son completamente (visibles) para las clases 
 derivadas.
 
-7. Las subclases pueden `...` el comportamiento de su superclase.
+7. Las subclases pueden (redefinir) el comportamiento de su superclase.
 
 8. ¿Puede una clase derivada hacer que la función pública de una clase base sea
 privada?
