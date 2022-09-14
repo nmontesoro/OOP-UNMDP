@@ -8,7 +8,7 @@
 
 namespace oop
 {
-    class Empleado : public Persona
+    class Empleado : public virtual Persona
     {
     public:
         Empleado();

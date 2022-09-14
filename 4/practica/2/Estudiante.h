@@ -5,7 +5,7 @@
 
 namespace oop
 {
-    class Estudiante : public Persona
+    class Estudiante : public virtual Persona
     {
     public:
         Estudiante();
