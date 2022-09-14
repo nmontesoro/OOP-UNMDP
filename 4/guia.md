@@ -19,6 +19,10 @@
 
 5. ¿Para qué se utiliza la palabra clave `protected`?
 
+    Para declarar un atributo o método de forma tal que las clases derivadas
+    puedan acceder a él, pero que se comporte como `private` para todo el resto
+    del código.
+
 6. Los datos y miembros protegidos son completamente `...` para las clases 
 derivadas.
 
