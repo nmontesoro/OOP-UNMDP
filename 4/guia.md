@@ -4,6 +4,11 @@
 
 1. Explique con sus palabras el concepto de herencia.
 
+    Herencia es un mecanismo para derivar una clase de otras que comparten una 
+    serie de métodos y atributos. Permite ahorrar trabajo al programar, ya que 
+    los métodos y atributos compartidos sólo deben ser definidos en la clase
+    base, y estarán disponibles para ambas.
+
 2. ¿Cuál es la relación entre los conceptos de clase, subclase y superclase?
 
 3. En el lenguaje C++, la derivación es una forma de expresar la relación `...`.
