@@ -26,7 +26,7 @@ namespace oop
         Fecha fechaGetIngreso() const;
         float fGetSueldo() const;
 
-        friend std::ostream &operator<<(std::ostream &os, Empleado &est);
+        friend std::ostream &operator<<(std::ostream &os, const Empleado &est);
 
     protected:
         std::string stCategoria;
@@ -34,7 +34,7 @@ namespace oop
         float fSueldo;
     };
 
-    std::ostream &operator<<(std::ostream &os, oop::Empleado &est);
+    std::ostream &operator<<(std::ostream &os, const oop::Empleado &est);
 }
 
 #endif

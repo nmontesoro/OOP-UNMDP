@@ -24,15 +24,15 @@ namespace oop
         unsigned int GetDocument() const;
         Fecha GetBirthDate() const;
 
-        friend std::ostream &operator<<(std::ostream &os, Persona &per);
+        friend std::ostream &operator<<(std::ostream &os, const Persona &per);
 
     protected:
         std::string Name_;
         unsigned int Document_;
         Fecha BirthDate_;
     };
-}
 
-std::ostream &operator<<(std::ostream &os, oop::Persona &per);
+    std::ostream &operator<<(std::ostream &os, const oop::Persona &per);
+}
 
 #endif

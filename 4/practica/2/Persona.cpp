@@ -56,7 +56,7 @@ unsigned int oop::Persona::GetDocument() const { return Document_; }
 
 oop::Fecha oop::Persona::GetBirthDate() const { return BirthDate_; }
 
-std::ostream &oop::operator<<(std::ostream &os, oop::Persona &per)
+std::ostream &oop::operator<<(std::ostream &os, const oop::Persona &per)
 {
     return (os << per.Name_);
 }

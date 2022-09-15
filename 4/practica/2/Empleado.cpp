@@ -52,7 +52,7 @@ oop::Fecha oop::Empleado::fechaGetIngreso() const { return fechaIngreso; }
 
 float oop::Empleado::fGetSueldo() const { return fSueldo; }
 
-std::ostream &oop::operator<<(std::ostream &os, oop::Empleado &est)
+std::ostream &oop::operator<<(std::ostream &os, const oop::Empleado &est)
 {
     return (os << "Nombre = " << est.Name_ << "\nDocumento = " << est.Document_
                << "\nFecha nacimiento = " << est.BirthDate_ << "\nCategoria"
