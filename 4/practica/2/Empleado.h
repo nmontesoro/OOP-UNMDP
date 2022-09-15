@@ -33,8 +33,8 @@ namespace oop
         Fecha fechaIngreso;
         float fSueldo;
     };
-}
 
-std::ostream &operator<<(std::ostream &os, oop::Empleado &est);
+    std::ostream &operator<<(std::ostream &os, oop::Empleado &est);
+}
 
 #endif
