@@ -14,6 +14,8 @@ oop::Estudiante::Estudiante(const std::string &name, unsigned int doc,
     vSetPromedio(prom);
 }
 
+oop::Estudiante::~Estudiante() {}
+
 void oop::Estudiante::vSetCarrera(const std::string &carr) { stCarrera = carr; }
 
 bool oop::Estudiante::vSetIngreso(const Fecha &date)

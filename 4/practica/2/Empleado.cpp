@@ -12,6 +12,8 @@ oop::Empleado::Empleado(const std::string &name, const unsigned int doc,
     fSueldo = sueldo;
 }
 
+oop::Empleado::~Empleado() {}
+
 void oop::Empleado::vSetCategoria(const std::string &carr)
 {
     stCategoria = carr;

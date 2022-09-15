@@ -17,6 +17,8 @@ oop::Becario::Becario(const std::string &name, const unsigned int doc,
     stDirector = dir;
 }
 
+oop::Becario::~Becario() {}
+
 void oop::Becario::vSetTipo(const std::string &carr) { sTipo = carr; }
 
 void oop::Becario::vSetDuracion(const int cant) { iDuracion = cant; }
