@@ -47,7 +47,7 @@ std::ostream &oop::operator<<(std::ostream &s, const oop::Becario &b)
               << "\nCantidad de materias = " << b.iMaterias << "\nPromedio = "
               << b.fPromedio << "\nTipo de beca = " << b.sTipo
               << "\nDuracion = " << b.iDuracion
-              << "Lugar trabajo = " << b.stLaboratorio
+              << "\nLugar trabajo = " << b.stLaboratorio
               << "\nNombre director = " << b.stDirector << "\n"
               << std::endl);
 }
