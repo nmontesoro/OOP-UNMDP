@@ -36,8 +36,8 @@ namespace oop
         Fecha fechaIngreso;
         float fPromedio;
     };
-}
 
-std::ostream &oop::operator<<(std::ostream &os, const oop::Estudiante &est);
+    std::ostream &operator<<(std::ostream &os, const oop::Estudiante &est);
+}
 
 #endif

@@ -55,5 +55,10 @@ void oop::Estudiante::vSetPromedio(const float prom)
 
 std::ostream &oop::operator<<(std::ostream &os, const oop::Estudiante &est)
 {
-    return (os << est.Name_);
+    return (os << est.Name_ << "\nDocumento = " << est.Document_
+               << "\nFecha nacimiento = " << est.BirthDate_ << "\nCarrera = "
+               << est.stCarrera << "\nFecha ingreso = " << est.fechaIngreso
+               << "\nCantidad de materias aprobadas = " << est.iMaterias
+               << "\nPromedio = " << est.fPromedio << "\n"
+               << std::endl);
 }
