@@ -14,7 +14,8 @@ oop::Becario::Becario(const std::string &name, const unsigned int doc,
                       const std::string cat, const oop::Fecha &feing,
                       const float su, const std::string tipo, const int dur,
                       const std::string lab, const std::string dir)
-    : Estudiante(name, doc, fnac, carr, fing, cant, prom),
+    : Persona(name, doc, fnac),
+      Estudiante(name, doc, fnac, carr, fing, cant, prom),
       Empleado(name, doc, fnac, cat, feing, su)
 {
     sTipo = tipo;
