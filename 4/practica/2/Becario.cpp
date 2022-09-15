@@ -1,6 +1,12 @@
 #include "Becario.h"
 
-oop::Becario::Becario() : Estudiante(), Empleado() {}
+oop::Becario::Becario() : Estudiante(), Empleado()
+{
+    sTipo = "";
+    iDuracion = 0;
+    stLaboratorio = "";
+    stDirector = "";
+}
 
 oop::Becario::Becario(const std::string &name, const unsigned int doc,
                       const oop::Fecha &fnac, const std::string carr,

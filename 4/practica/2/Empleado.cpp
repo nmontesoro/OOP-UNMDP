@@ -1,6 +1,11 @@
 #include "Empleado.h"
 
-oop::Empleado::Empleado() : Persona() {}
+oop::Empleado::Empleado() : Persona()
+{
+    stCategoria = "";
+    fechaIngreso = Fecha();
+    fSueldo = 0.0;
+}
 
 oop::Empleado::Empleado(const std::string &name, const unsigned int doc,
                         const Fecha &fnac, const std::string &categoria,

@@ -1,6 +1,12 @@
 #include "Estudiante.h"
 
-oop::Estudiante::Estudiante() : Persona() {}
+oop::Estudiante::Estudiante() : Persona()
+{
+    stCarrera = "";
+    fechaIngreso = Fecha();
+    vSetMaterias(0);
+    vSetPromedio(0.0);
+}
 
 oop::Estudiante::Estudiante(const std::string &name, unsigned int doc,
                             const Fecha &fnac, const std::string &carrera,

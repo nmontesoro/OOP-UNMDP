@@ -8,7 +8,12 @@ oop::Persona::Persona(const std::string &name, const unsigned int &num,
     BirthDate_ = fecha;
 }
 
-oop::Persona::~Persona() {}
+oop::Persona::~Persona()
+{
+    Name_ = "";
+    Document_ = 0;
+    BirthDate_ = Fecha();
+}
 
 void oop::Persona::SetName(const std::string &nom) { Name_ = nom; }
 
