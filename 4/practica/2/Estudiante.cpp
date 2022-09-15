@@ -4,14 +4,14 @@ oop::Estudiante::Estudiante() : Persona() {}
 
 oop::Estudiante::Estudiante(const std::string &name, unsigned int doc,
                             const Fecha &fnac, const std::string &carrera,
-                            const Fecha &fing, int cant)
+                            const Fecha &fing, const int cant, const float prom)
     : Persona(name, doc, fnac)
 
 {
     stCarrera = carrera;
     fechaIngreso = fing;
-    iMaterias = cant >= 0 ? cant : 0;
-    fPromedio = 0;
+    vSetMaterias(cant);
+    vSetPromedio(prom);
 }
 
 void oop::Estudiante::vSetCarrera(const std::string &carr) { stCarrera = carr; }
@@ -47,3 +47,13 @@ oop::Fecha oop::Estudiante::fechaGetIngreso() const { return fechaIngreso; }
 int oop::Estudiante::iGetMaterias() const { return iMaterias; }
 
 float oop::Estudiante::GetPromedio() const { return fPromedio; }
+
+void oop::Estudiante::vSetPromedio(const float prom)
+{
+    fPromedio = prom >= 0 ? prom : 0;
+}
+
+std::ostream &oop::operator<<(std::ostream &os, const oop::Estudiante &est)
+{
+    return (os << est.Name_);
+}
