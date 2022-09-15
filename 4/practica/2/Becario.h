@@ -1,6 +1,7 @@
 #ifndef LIB_BECARIO
 #define LIB_BECARIO
 
+#include <iostream>
 #include <string>
 
 #include "Empleado.h"
@@ -27,12 +28,16 @@ namespace oop
         std::string stGetLaboratorio() const;
         std::string stGetDirector() const;
 
+        friend std::ostream &operator<<(std::ostream &s, const Becario &b);
+
     protected:
         std::string sTipo;
         int iDuracion;
         std::string stLaboratorio;
         std::string stDirector;
     };
+
+    std::ostream &operator<<(std::ostream &s, const Becario &b);
 }
 
 #endif

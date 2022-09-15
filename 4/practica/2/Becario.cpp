@@ -33,3 +33,19 @@ int oop::Becario::iGetDuracion() const { return iDuracion; }
 std::string oop::Becario::stGetLaboratorio() const { return stLaboratorio; }
 
 std::string oop::Becario::stGetDirector() const { return stDirector; }
+
+std::ostream &oop::operator<<(std::ostream &s, const oop::Becario &b)
+{
+    return (s << "Nombre = " << b.Name_ << "\nDocumento = " << b.Document_
+              << "\nFecha nacimiento = " << b.BirthDate_
+              << "\nCategoria = " << b.stCategoria
+              << "\nFecha ingreso (empleado) = " << b.Empleado::fechaIngreso
+              << "\nSueldo = " << b.fSueldo << "\nCarrera = " << b.stCarrera
+              << "\nFecha ingreso (estudiante) = " << b.Estudiante::fechaIngreso
+              << "\nCantidad de materias = " << b.iMaterias << "\nPromedio = "
+              << b.fPromedio << "\nTipo de beca = " << b.sTipo
+              << "\nDuracion = " << b.iDuracion
+              << "Lugar trabajo = " << b.stLaboratorio
+              << "\nNombre director = " << b.stDirector << "\n"
+              << std::endl);
+}
