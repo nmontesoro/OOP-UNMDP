@@ -11,6 +11,7 @@ namespace oop
 {
     class Becario final : public virtual Estudiante, public virtual Empleado
     {
+    public:
         Becario();
         Becario(const std::string &name, const unsigned int doc,
                 const Fecha &fnac, const std::string carr, const Fecha &fing,
