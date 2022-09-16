@@ -29,25 +29,120 @@ namespace oop
             Gerente
         };
 
+        /**
+         * @brief Constructor de clase Empleado
+         * @param nombre Nombre del empleado
+         * @param tipo Tipo de empleado (planta permanente, temporario o
+         * gerente)
+         * @param horas Cantidad de horas trabajadas
+         * @param anos Cantidad de años de antigüedad
+         * @param hijos Cantidad de hijos
+         * @param casado Si está casado
+         */
         Empleado(const std::string &nombre, const TipoEmpleado tipo,
                  double horas, int anos, int hijos, bool casado);
 
+        /**
+         * @brief Devuelve el nombre del empleado
+         * @return std::string con el nombre del empleado
+         */
         std::string GetNombre() const;
+
+        /**
+         * @brief Devuelve las horas trabajadas por el empleado
+         * @return Cantidad de horas trabajadas por el empleado
+         */
         double GetHorasTrabajadas() const;
+
+        /**
+         * @brief Devuelve un entero que identifica al tipo de empleado
+         * @return Un entero que identifica al tipo de empleado
+         */
         int GetTipoEmpleado() const;
+
+        /**
+         * @brief Devuelve los años de antigüedad del empleado
+         * @return Años de antigüedad del empleado
+         */
         int GetAnosAntiguedad() const;
+
+        /**
+         * @brief Devuelve la cantidad de hijos del empleado
+         * @return Cantidad de hijos del empleado
+         */
         int GetCantHijos() const;
+
+        /**
+         * @brief Devuelve true si el empleado está casado
+         * @return Boolean indicando si el empleado está casado
+         */
         bool GetCasado() const;
+
+        /**
+         * @brief Devuelve el salario por hora del empleado
+         * @return Salario por hora del empleado
+         */
         double GetSalarioPorHora() const;
+
+        /**
+         * @brief Devuelve el monto pagado por año de antigüedad
+         * @return Monto pagado por año de antigüedad
+         */
         double GetSalarioAntiguedad() const;
+
+        /**
+         * @brief Devuelve el monto pagado por cada hijo
+         * @return Monto pagado por cada hijo
+         */
         double GetSalarioFamiliar() const;
+
+        /**
+         * @brief Devuelve el monto total a pagar al empleado
+         * @return Monto total a pagar al empleado
+         */
         double GetPagoTotal() const;
 
+        /**
+         * @brief Establece el nombre del empleado
+         * @param nombre Nombre nuevo
+         * @return (void)
+         */
         void SetNombre(const std::string &nombre);
+
+        /**
+         * @brief Establece las horas que el empleado ha trabajado
+         * @param horas Horas de trabajo
+         * @return (void)
+         */
         void SetHorasTrabajadas(const double horas);
+
+        /**
+         * @brief Establece el tipo de empleado
+         * @param tipo Un entero que representa al tipo de empleado (ver
+         * oop::Empleado::TipoEmpleado)
+         * @return (void)
+         */
         void SetTipoEmpleado(const TipoEmpleado tipo);
+
+        /**
+         * @brief Establece la antigüedad del empleado
+         * @param anos Nueva antigüedad
+         * @return (void)
+         */
         void SetAnosAntiguedad(const int anos);
+
+        /**
+         * @brief Establece la cantidad de hijos del empleado
+         * @param hijos Nueva cantidad de hijos
+         * @return (void)
+         */
         void SetCantHijos(const int hijos);
+
+        /**
+         * @brief Establece el estado civil del empleado
+         * @param casado Nuevo estado civil
+         * @return (void)
+         */
         void SetCasado(const bool casado);
     };
 }
