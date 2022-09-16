@@ -105,14 +105,12 @@ namespace oop
         /**
          * @brief Establece el nombre del empleado
          * @param nombre Nombre nuevo
-         * @return (void)
          */
         void SetNombre(const std::string &nombre);
 
         /**
          * @brief Establece las horas que el empleado ha trabajado
          * @param horas Horas de trabajo
-         * @return (void)
          */
         void SetHorasTrabajadas(const double horas);
 
@@ -120,28 +118,24 @@ namespace oop
          * @brief Establece el tipo de empleado
          * @param tipo Un entero que representa al tipo de empleado (ver
          * oop::Empleado::TipoEmpleado)
-         * @return (void)
          */
         void SetTipoEmpleado(const TipoEmpleado tipo);
 
         /**
          * @brief Establece la antigüedad del empleado
          * @param anos Nueva antigüedad
-         * @return (void)
          */
         void SetAnosAntiguedad(const int anos);
 
         /**
          * @brief Establece la cantidad de hijos del empleado
          * @param hijos Nueva cantidad de hijos
-         * @return (void)
          */
         void SetCantHijos(const int hijos);
 
         /**
          * @brief Establece el estado civil del empleado
          * @param casado Nuevo estado civil
-         * @return (void)
          */
         void SetCasado(const bool casado);
     };
