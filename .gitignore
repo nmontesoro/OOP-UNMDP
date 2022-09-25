@@ -37,3 +37,7 @@
 # Clang
 *.ilk
 *.pdb
+
+# Binary files
+*.dat
+*.bin
