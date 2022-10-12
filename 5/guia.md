@@ -4,8 +4,22 @@
 
 1. ¿Qué es el polimorfismo?
 
+    Es la capacidad de los objetos de responder al mismo mensaje en función
+    de los parámetros utilizados durante su invocación o de la clase a la cual
+    pertenece. Se puede invocar a una función de un objeto sin especificar su 
+    tipo exacto. Por ejemplo al invocar `Figura.Dibujar()` se dibujará un
+    círculo, un rectángulo o un polígono dependiendo del objeto heredado de
+    la clase `Figura` que llame a la función.
+
 2. Según lo que se vio en clase, ¿por qué no hacer que todas las
    funciones de una clase sean virtuales?
+
+   Porque podría tener consecuencias graves en cuanto a performance. Por un
+   lado, al hacer uso de una `VTable`, el llamado a un método del objeto se
+   vuelve indirecto, lo que causa una pequeña diferencia de velocidad respecto
+   de una función no declarada como `virtual`. Pero el problema más grave 
+   radica en que el compilador no puede optimizar este tipo de funciones
+   haciéndolas `inline`. Ver [StackOverflow](https://stackoverflow.com/questions/292124/is-there-any-reason-not-to-make-a-member-function-virtual).
 
 3. ¿Qué es el enlace dinámico?
 
