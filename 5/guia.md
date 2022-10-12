@@ -72,6 +72,9 @@
    base no cuenta con el método esperado de la clase derivada.
 
 10. ¿Qué entiende por _upcasting_ y _downcasting_?
+   
+   _Upcasting_ es convertir una clase derivada en una clase base. _Downcasting_
+   es convertir una clase base en una clase derivada.
 
 11. Investigue sobre el _object slicing_.
 
