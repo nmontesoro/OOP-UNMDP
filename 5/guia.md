@@ -61,6 +61,9 @@
    ¿seguirá siendo `virtual` cuando la herede una clase de tercera
    generación?
 
+   Sí, la función continúa siendo `virtual`. De todas formas se acostumbra
+   agregar dicha palabra para que el código sea más claro.
+
 9. ¿Por qué es malo cambiar el tipo de un objeto en tiempo de ejecución?
 
 10. ¿Qué entiende por _upcasting_ y _downcasting_?
