@@ -51,6 +51,11 @@
 
 7. ¿Cómo se puede crear un constructor virtual de copia?
 
+   Los constructores no pueden ser virtuales, por lo que si se necesitara
+   implementar en las clases derivadas el constructor de copia, se debería crear
+   una función virtual `clonar` en la clase base y redefinirla en la clase
+   derivada.
+
 8. Si una clase base declara una función como `virtual`, y una clase
    derivada no utiliza el término `virtual` cuando redefina esa función,
    ¿seguirá siendo `virtual` cuando la herede una clase de tercera
