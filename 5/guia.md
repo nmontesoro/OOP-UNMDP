@@ -85,6 +85,9 @@
    [Bogotobogo](https://www.bogotobogo.com/cplusplus/slicing.php).
 
 12. ¿Cómo se puede prevenir el _object slicing_?
+   
+   Se puede prevenir si evitamos pasar objetos por valor, y usamos punteros o
+   referencias en su lugar.
 
 13. ¿Qué significa filtrar la funcionalidad de manera ascendente?
 
