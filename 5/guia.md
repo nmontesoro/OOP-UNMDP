@@ -38,6 +38,11 @@
 
 5. ¿Qué es un destructor virtual?
 
+   Los destructores virtuales son útiles cuando podría ocurrir que se elimine
+   una instancia de una clase derivada a través de un puntero a la clase base.
+   Si el destructor es declarado como `virtual`, las clases derivadas lo
+   sobrescriben, entonces se ejecutará el código correcto.
+
 6. ¿Qué ocurre si se está dentro de un constructor y se llama a una
    función virtual?
 
