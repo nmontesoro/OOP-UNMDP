@@ -66,6 +66,11 @@
 
 9. ¿Por qué es malo cambiar el tipo de un objeto en tiempo de ejecución?
 
+   Se explica en [Bototobogo](https://www.bogotobogo.com/cplusplus/upcasting_downcasting.php).
+   En el caso de _upcasting_ ocurre el _object slicing_, mientras que en el
+   _downcasting_ se podría llegar a dar una operación no segura si la clase
+   base no cuenta con el método esperado de la clase derivada.
+
 10. ¿Qué entiende por _upcasting_ y _downcasting_?
 
 11. Investigue sobre el _object slicing_.
