@@ -29,6 +29,13 @@
 
 4. ¿Qué es una tabla v o `VTable` y para qué sirve?
 
+   Una _Virtual Method Table_ o `VTable` es un mecanismo utilizado en un
+   lenguaje de programación para soportar el enlace dinámico. Cuando una clase
+   declara una función como `virtual`, la mayoría de los compiladores agregan
+   una variable miembro oculta que apunta a un array de punteros a funciones.
+   Estos punteros se usan en tiempo de ejecución para invocar la implementación
+   adecuada.
+
 5. ¿Qué es un destructor virtual?
 
 6. ¿Qué ocurre si se está dentro de un constructor y se llama a una
