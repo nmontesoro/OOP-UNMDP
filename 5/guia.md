@@ -46,6 +46,9 @@
 6. ¿Qué ocurre si se está dentro de un constructor y se llama a una
    función virtual?
 
+   Se produce un error de compilación. Dado que la VTable no existe aún, el
+   compilador no sabe a qué función llamar.
+
 7. ¿Cómo se puede crear un constructor virtual de copia?
 
 8. Si una clase base declara una función como `virtual`, y una clase
