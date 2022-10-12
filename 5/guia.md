@@ -78,6 +78,12 @@
 
 11. Investigue sobre el _object slicing_.
 
+   Cuando un objeto de una clase derivada se pasa por valor como un objeto de
+   clase base, se llama al constructor de copia **de la clase base**, entonces
+   algunos comportamientos específicos de la clase derivada se eliminan.
+   Esto no ocurre cuando se utilizan punteros o referencias. Ver
+   [Bogotobogo](https://www.bogotobogo.com/cplusplus/slicing.php).
+
 12. ¿Cómo se puede prevenir el _object slicing_?
 
 13. ¿Qué significa filtrar la funcionalidad de manera ascendente?
