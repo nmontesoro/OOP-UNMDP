@@ -23,6 +23,10 @@
 
 3. ¿Qué es el enlace dinámico?
 
+   La asociación se realiza en tiempo de ejecución (redefinición de métodos).
+   Las funciones polimórficas se declaran de la misma manera en distintas 
+   clases que las definen en forma diferente.
+
 4. ¿Qué es una tabla v o `VTable` y para qué sirve?
 
 5. ¿Qué es un destructor virtual?
