@@ -98,6 +98,16 @@
     de `Circulo`, y éstos a su vez heredan de `Figura`, ¿cuántas `Figura`s
     se crearán cuando cree un `RectRedondo`?
 
+    Ver `practica/test`. En este caso, todas las clases derivadas heredan
+    también en forma virtual:
+
+    ```cpp
+    class Circulo : public virtual Figura
+    ```
+
+    De esta manera, sólo se creará una instancia de `Figura` al crear
+    un `RectRedondo`.
+
 ## Ejercicios
 
 1.  Escriba un programa que derive un `Auto` y un `Camion` de la clase
