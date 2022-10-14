@@ -18,6 +18,7 @@ namespace oop
 
         void AgregarCuenta(Cuenta *cuenta);
         double CalcActivos() const;
+        Cuenta *GetCuenta(const size_t i);
     };
 }
 

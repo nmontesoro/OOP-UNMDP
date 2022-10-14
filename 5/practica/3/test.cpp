@@ -14,7 +14,19 @@ int main()
     bank.AgregarCuenta(ca2);
     bank.AgregarCuenta(cc1);
 
-    std::cout << bank.CalcActivos() << std::endl;
+    std::cout << bank.CalcActivos() << '\n';
+
+    oop::Cuenta *universitaria = bank.GetCuenta(1);
+
+    std::cout << *universitaria << '\n';
+
+    universitaria->Extraer(200);
+
+    std::cout << *universitaria << '\n';
+
+    universitaria->Extraer(100);
+
+    std::cout << *universitaria << '\n';
 
     return 0;
 }

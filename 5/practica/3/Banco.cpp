@@ -18,3 +18,5 @@ double oop::Banco::CalcActivos() const
 
     return activos;
 }
+
+oop::Cuenta *oop::Banco::GetCuenta(const size_t i) { return cuentas_.at(i); }
