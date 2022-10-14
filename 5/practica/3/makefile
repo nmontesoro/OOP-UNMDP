@@ -6,7 +6,7 @@ CFLAGS=-g $(INCDIRS) $(OPT) -Weverything -Wpedantic -std=c++11 -Wno-padded -Wno-
 CFILES=Cuenta.cpp CuentaCorriente.cpp CajaAhorro.cpp Banco.cpp test.cpp
 OBJECTS=Cuenta.o CuentaCorriente.o CajaAhorro.o Banco.o test.o
 
-BINARY=bin
+BINARY=test.out
 
 all: $(BINARY)
 
