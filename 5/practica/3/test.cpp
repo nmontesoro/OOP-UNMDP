@@ -28,5 +28,7 @@ int main()
 
     std::cout << *universitaria << '\n';
 
+    std::cout << bank;
+
     return 0;
 }
