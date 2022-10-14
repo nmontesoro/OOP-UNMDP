@@ -1,11 +1,5 @@
 #include "Cuenta.h"
 
-oop::Cuenta::Cuenta(const Cuenta &orig)
-{
-    titular_ = orig.titular_;
-    saldo_ = orig.saldo_;
-}
-
 oop::Cuenta::Cuenta(const std::string &titular, const double saldo)
 {
     titular_ = titular;

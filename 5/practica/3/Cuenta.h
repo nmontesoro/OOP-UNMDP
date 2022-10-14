@@ -14,7 +14,6 @@ namespace oop
         Cuenta();
 
     public:
-        Cuenta(const Cuenta &orig);
         Cuenta(const std::string &titular, const double saldo);
         virtual ~Cuenta();
 
