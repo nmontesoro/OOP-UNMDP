@@ -4,10 +4,7 @@ oop::Banco::Banco() { cuentas_.reserve(10); }
 
 oop::Banco::~Banco() {}
 
-void oop::Banco::AgregarCuenta(const Cuenta &cuenta)
-{
-    cuentas_.push_back(cuenta);
-}
+void oop::Banco::AgregarCuenta(Cuenta *cuenta) { cuentas_.push_back(cuenta); }
 
 double oop::Banco::CalcActivos() const
 {
@@ -16,7 +13,7 @@ double oop::Banco::CalcActivos() const
 
     for (size_t i = 0; i < n; i++)
     {
-        activos += cuentas_[i].GetSaldo();
+        activos += cuentas_[i]->GetSaldo();
     }
 
     return activos;
