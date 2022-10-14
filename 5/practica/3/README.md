@@ -10,3 +10,6 @@ tanto `CuentaCorriente` como `CajaAhorro` como parámetro.
 
 De todas formas cumple con la consigna, que era sólo determinar los activos
 del `Banco` haciendo una suma de todos los saldos de las cuentas.
+
+**Modificación:** En clase vimos que lo correcto es usar un vector de 
+punteros a `Cuenta` en la implementación de `Banco`.

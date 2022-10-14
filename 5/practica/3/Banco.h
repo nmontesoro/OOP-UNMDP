@@ -10,13 +10,13 @@ namespace oop
     class Banco
     {
     private:
-        std::vector<Cuenta> cuentas_;
+        std::vector<Cuenta *> cuentas_;
 
     public:
         Banco();
         ~Banco();
 
-        void AgregarCuenta(const Cuenta &cuenta);
+        void AgregarCuenta(Cuenta *cuenta);
         double CalcActivos() const;
     };
 }
