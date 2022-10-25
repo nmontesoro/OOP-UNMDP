@@ -1,17 +1,45 @@
+#include <iostream>
 #include <memory>
 
+#include "Factura.h"
+#include "ReciboDePago.h"
 #include "Usuario.h"
+
+// void testFactura();
+void testRecibo();
+// void testUsuario();
+void myPrint(std::string a, std::string b);
 
 int main()
 {
-    auto user = std::make_shared<oop::Usuario>(oop::Usuario());
+    // testFactura();
+    testRecibo();
+    // testUsuario();
 
-    user->SetNombre("Carlos");
-
-    auto fac1 =
-        std::make_shared<oop::Factura>(oop::Factura("Servicios", 14, 100000));
-
-    user->AddFactura(fac1);
-    oop::ReciboDePago rec = user->CalcPagos(0, 100);
     return 0;
 }
+
+void myPrint(std::string a, std::string b)
+{
+    std::cout << a << ": " << b << std::endl;
+}
+
+void testRecibo()
+{
+    /* Creo el objeto */
+    oop::ReciboDePago rec =
+        oop::ReciboDePago("Juan", 10000, 1000, nullptr, nullptr);
+
+    if (rec.GetNombreContribuyente() != "Juan")
+        myPrint("Recibo", "Nombre incorrecto");
+
+    if (rec.GetMontoTotal() != 10005)
+        myPrint("Recibo", "Monto total incorrecto");
+
+    if (rec.GetMontoFijo() != 5)
+        myPrint("Recibo", "Monto fijo incorrecto");
+
+    if (rec.GetMontoVariable() != 1000)
+        myPrint("Recibo", "Monto variable incorrecto");
+}
+
