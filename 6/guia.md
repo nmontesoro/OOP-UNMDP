@@ -30,6 +30,11 @@
 
 10. ¿Qué hace el argumento `ios::ate`?
 
+    Según el estándar C++11, `ios::app` indica que todas las operaciones
+    de escritura se realizarán al final del archivo, mientras que 
+    `ios::ate:` abre el archivo y hace un _seek_ hacia el final una única
+    vez, inmediatamente luego de abrirlo.
+
 11. Cuando inicia un programa de C++ que incluye la clase `iostream` se crean e inicializan cuatro objetos de E/S estándar. ¿Cuáles son?
 
 12. ¿Qué es una excepción?
