@@ -58,6 +58,14 @@
 
 15. ¿Qué información puede contener una excepción?
 
+    Todas las excepciones que hereden de la clase base `exception` pueden
+    sobrecargar el método `what` para proveer información específica
+    sobre el error que se generó.
+
+    Uno podría, además, declarar una clase que herede de `exception`
+    y que tenga más información. Por ejemplo, el nombre del archivo al que
+    no se pudo acceder.
+
 16. ¿Cuándo se crean los objetos de excepción?
 
 17. ¿Se deben pasar las excepciones por valor o por referencia?
