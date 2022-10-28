@@ -92,6 +92,28 @@ donde ocurre?
 
 22. ¿Se tiene que atrapar una excepción en el mismo lugar en el que el bloque `try` la creó?
 
+    No. Se puede relanzar la misma excepción usando `throw;`. Del libro de
+    Stroustrup:
+
+    ```cpp
+    void h()
+    {
+        try {
+            // ... code that might throw an exception ...
+        }
+        catch (std::exception &err) {
+            if (can_handle_it_completely) {
+                // ... handle it ...
+                return;
+            }
+            else {
+                // ... do what can be done here ...
+                throw; // rethrow the exception
+            }
+        }
+    }
+    ```
+
 ### Ejercicios
 
 1. Explique cada línea del siguiente fragmento de código:
