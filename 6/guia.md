@@ -47,6 +47,10 @@
 
 13. ¿Qué es un bloque `try`?
 
+    Un bloque `try` es un bloque de código que ejecuta funciones y, 
+    en caso de que alguna de ellas lance una excepción, la deriva al bloque
+    `catch`.
+
 14. ¿Qué es una instrucción `catch`?
 
 15. ¿Qué información puede contener una excepción?
