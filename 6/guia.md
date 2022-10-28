@@ -70,7 +70,10 @@
 
 17. ¿Se deben pasar las excepciones por valor o por referencia?
 
-18. ¿Atrapará una instrucción `catch` una excepción derivada si está buscando la clase base?
+18. ¿Atrapará una instrucción `catch` una excepción derivada si está buscando
+la clase base?
+
+    Sí.
 
 19. ¿Qué significa `catch(...)`?
 
