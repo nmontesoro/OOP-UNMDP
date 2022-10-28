@@ -39,6 +39,12 @@
 
 12. ¿Qué es una excepción?
 
+    Según Stroustrup, una excepción es una herramienta que permite obtener
+    información desde el punto en donde se genera un error a un punto en 
+    donde puede ser manejada. Una función que no puede lidiar con un problema
+    _lanza_ una excepción, esperando que quien la llamó pueda manejar el
+    problema, haciendo una intercepción o _catch_.
+
 13. ¿Qué es un bloque `try`?
 
 14. ¿Qué es una instrucción `catch`?
