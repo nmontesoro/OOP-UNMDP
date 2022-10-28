@@ -79,7 +79,11 @@ la clase base?
 
     Significa _interceptar_.
 
-20. ¿Por qué preocuparse por producir excepciones? ¿Por qué no maejar el error donde ocurre?
+20. ¿Por qué preocuparse por producir excepciones? ¿Por qué no manejar el error
+donde ocurre?
+
+    Porque permite que el usuario de una librería determine los pasos a seguir,
+    otorgándole mayor flexibilidad.
 
 21. ¿Por qué generar un objeto? ¿Por qué no solo pasar un código de error?
 
