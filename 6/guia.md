@@ -77,6 +77,8 @@ la clase base?
 
 19. ¿Qué significa `catch(...)`?
 
+    Significa _interceptar_.
+
 20. ¿Por qué preocuparse por producir excepciones? ¿Por qué no maejar el error donde ocurre?
 
 21. ¿Por qué generar un objeto? ¿Por qué no solo pasar un código de error?
