@@ -87,6 +87,9 @@ donde ocurre?
 
 21. ¿Por qué generar un objeto? ¿Por qué no solo pasar un código de error?
 
+    Porque evita que estos códigos de error se pisen entre sí. Además permite
+    otorgar mayor información al usuario.
+
 22. ¿Se tiene que atrapar una excepción en el mismo lugar en el que el bloque `try` la creó?
 
 ### Ejercicios
