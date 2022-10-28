@@ -53,6 +53,9 @@
 
 14. ¿Qué es una instrucción `catch`?
 
+    Permite interceptar una excepción de algún tipo determinado y ejecutar
+    código específico para manejar el error.
+
 15. ¿Qué información puede contener una excepción?
 
 16. ¿Cuándo se crean los objetos de excepción?
